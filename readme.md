@@ -1,5 +1,6 @@
 # PWSH Inlämning 1
 
+
 ## Beskrivning
 
 Det här scriptet skapar en mapp döpt efter användarens input.
@@ -23,4 +24,4 @@ Användaren får sedan ange vad mappen ska heta.
 
 ## Vad jag tyckte var svårt eller intressant
 
-Jag tyckte även det var intressant att arbeta med `Join-Path` och att skapa loggfiler automatiskt.
+Jag tyckte det var intressant att arbeta med `Join-Path` och att skapa loggfiler automatiskt.
