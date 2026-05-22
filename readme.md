@@ -17,7 +17,7 @@ Scriptet skapar även en loggfil i `logs`-mappen med datum och tid för när map
 Kör scriptet i PowerShell:
 
 ```powershell
-.\scriptnamn.ps1
+.\strukturverktyg.ps1
 ```
 
 Användaren får sedan ange vad mappen ska heta.
