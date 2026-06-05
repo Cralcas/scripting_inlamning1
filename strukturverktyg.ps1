@@ -8,6 +8,7 @@ $fullPath = Join-Path $basePath $folderName
 # Array med namn på det undermapparna ska heta
 $subDirectories = @("logs", "scripts", "temp")
 
+# Skapa datum samt sökväg och namn för loggfilen
 $datum = Get-Date -Format "yyyy-MM-dd"
 $logsPath = Join-Path $fullPath "logs"
 
