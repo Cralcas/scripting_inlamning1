@@ -1,8 +1,8 @@
 # Fråga användaren efter namn och skapa den i "C:\Temp\"
 $folderName = Read-Host "Vad ska mappen heta?"
 
-#Plats mappen ska skapas = C:\Temp\
-$basePath = "C:\Temp\"
+#Plats mappen ska skapas
+$basePath = Get-Location
 $fullPath = Join-Path $basePath $folderName
 
 # Array med namn på det undermapparna ska heta
@@ -10,7 +10,8 @@ $subDirectories = @("logs", "scripts", "temp")
 
 $datum = Get-Date -Format "yyyy-MM-dd"
 $logsPath = Join-Path $fullPath "logs"
-$logFile = Join-Path $logsPath "log-$datum.txt"
+
+$logFile = Join-Path $logsPath "log-$datum.log"
 
 # Funktion för att skapa en mapp
 function New-Directory {
@@ -31,7 +32,7 @@ function New-LogFile {
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
     # Skriv till filen
-    Add-Content -Path $path -Value "Struktur skapad: $timestamp"
+    Add-Content -Path $path -Value "Mapp skapad: $timestamp"
 }
 
 try {
